@@ -15,3 +15,10 @@ n2 = 44; sy2 = 66
 qgamma(c(.025, .975), a+sy1, b+n1)
 
 ## the same for group 2
+
+
+## prediction
+y = 0:10
+dnbinom(y, size=(a+sy1), mu = (a+sy1)/(b+n1))
+dnbinom(y, size=(a+sy2), mu = (a+sy2)/(b+n2))
+
